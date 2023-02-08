@@ -16,7 +16,7 @@ module.exports = {
       .useXpath()
       .click('//a[text()="Get started"]')
       .click('//button[@class="DocSearch DocSearch-Button"]')
-      .perform(() => {
+      .perform(function() {
         return this.actions().sendKeys("Asserts");
       })
       .click('//ul[@id="docsearch-list"]/li[1]/a')
