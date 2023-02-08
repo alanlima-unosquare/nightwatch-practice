@@ -17,7 +17,7 @@ module.exports = {
   src_folders: ['test'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: [],
+  page_objects_path: ['PageObjects/Unosquare', 'PageObjects/Nightwatch'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
   custom_commands_path: [],
@@ -56,7 +56,7 @@ module.exports = {
         start_process: true,
         server_path: ''
       },
-      
+      use_xpath: true
     },
     
     chrome: {
