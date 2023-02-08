@@ -1,5 +1,14 @@
+let checkBlog = {
+    checkBlog: function() {
+        return this.click('@blogA')
+        .sendKeys('@body', browser.Keys.END)
+        .assert.textContains('@addressP', 'Nightwatch.js was initially created in Oslo, Norway by Pineview.io – an independent software consultancy; it is now being maintained at BrowserStack with help from all our contributors.');
+    }
+}
+
 module.exports = {
     url: 'https://nightwatchjs.org/',
+    commands: [checkBlog],
     elements: {
         getStartedA: '//a[text()="Get started"]',
         searchButton: '//button[@class="DocSearch DocSearch-Button"]',

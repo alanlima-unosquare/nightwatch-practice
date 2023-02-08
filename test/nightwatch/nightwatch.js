@@ -26,9 +26,7 @@ module.exports = {
       })
       .click('@searchList')
       .assert.visible('@apiSpan')
-      .click('@blogA')
-      .sendKeys('@body', browser.Keys.END)
-      .assert.textContains('@addressP', 'Nightwatch.js was initially created in Oslo, Norway by Pineview.io – an independent software consultancy; it is now being maintained at BrowserStack with help from all our contributors.')
+      .checkBlog()
       .end();
     }
   };
