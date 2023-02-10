@@ -4,8 +4,7 @@ module.exports = {
       let unosquare = browser.page.mainpage();
       unosquare
       .navigate()
-      .main()
-      .contactUnosquare();
+      .last();
       browser.end();
     }
   };
