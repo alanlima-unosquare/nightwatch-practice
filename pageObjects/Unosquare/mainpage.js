@@ -44,7 +44,7 @@ let last = {
     let people = getNames();
     for (const person of people) {
       let xpath = `//div[@class="elementor-image-box-wrapper"]//h3[text()="${person}"]`;
-      this.waitForElementVisible(xpath);
+      this.assert.textEquals(xpath, person);
     }
     
     return this;

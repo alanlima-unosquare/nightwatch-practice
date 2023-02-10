@@ -1,5 +1,5 @@
 module.exports = {
-    'Demo test unosquare' : function() {
+    'Demo test amazon' : function() {
         browser.windowMaximize();
         let amazon = browser.page.amazon();
         amazon.navigate()
